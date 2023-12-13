@@ -5,8 +5,10 @@
     - name: print fruits name
       ansible.builtin.debug:
         msg: fruit name apple
+      when: what == "apple"
     
     - name: print fruits name
       ansible.builtin.debug:
         msg: fruits name banana
+      when: what == "banana"
         
