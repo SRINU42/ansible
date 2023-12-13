@@ -5,9 +5,10 @@
     - name: fruits name
       ansible.builtin.debug:
         msg: fruit name - {{ item }}
+      when: what == {{ item }}
       loop:
         - apple
         - orange
         - banana
         - grape
-      when: what == {{ item }}
+      
