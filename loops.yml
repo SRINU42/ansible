@@ -10,3 +10,4 @@
         - orange
         - banana
         - grape
+      when: what == {{ item }}
