@@ -3,11 +3,10 @@
   connection: local
   tasks: 
     - name: fruits name
-      ansible.buitlin.debug:
+      ansible.builtin.debug:
         msg: fruit name - {{ item }}
       loop:
         - apple
         - orange
         - banana
         - grape
-        
